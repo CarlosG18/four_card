@@ -23,10 +23,95 @@
   --Very_Dark_Blue: hsl(234, 12%, 34%);
   --Grayish_Blue: hsl(229, 6%, 66%);
   --Very_Light_Gray: hsl(0, 0%, 98%);
-  /*typography*/
-  --font: "Poppins, sans-serif";
 }
 
 body{
+  min-width: 100vh;
+  min-height: 100vh;
   font-size: 15px;
+  font-family: "Poppins" , sans-serif;
+  background-color: var(--Very_Light_Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  padding: 30px;
+  width: 500px;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+header > h1{
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+main{
+  display: flex;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box{
+  margin: 30px;
+  box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.05);
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.box > .box-content{
+  padding: 30px;
+}
+
+.line{
+  width: 100%;
+}
+
+.cyan{
+  border-top: 3px solid var(--Cyan);
+}
+
+.red{
+  border-top: 3px solid var(--Red);
+}
+
+.orange{
+  border-top: 3px solid var(--Orange);
+}
+
+.blue{
+  border-top: 3px solid var(--Blue);
+}
+
+.box-content > img{
+  margin: 25px 0px;
+  float: right;
+}
+
+h1{
+  color: var(--Very_Dark_Blue);
+}
+
+p{
+  font-weight: 400;
+  color: var(--Grayish_Blue);
+}
+
+footer{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 375px) {
+  main{
+    flex-direction: column;
+  }
 }
