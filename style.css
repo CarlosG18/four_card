@@ -59,7 +59,8 @@ main{
 }
 
 .box{
-  margin: 30px;
+  max-width: 275px;
+  margin: 0px 20px 20px 0px;
   box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.05);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
@@ -112,4 +113,10 @@ footer{
   main{
     flex-direction: column;
   }
+  
+  .box{
+    margin: 30px;
+    max-width: 300px;
+  }
 }
+
